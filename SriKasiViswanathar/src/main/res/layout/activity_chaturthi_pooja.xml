@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3"
+        app:title="Chaturthi Pooja"
+        app:titleTextColor="#800000"
+        app:navigationIconTint="#000000"
+        android:minHeight="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Heading -->
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0000FF"
+            android:text="18th Wednesday December 2024"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingBottom="8dp" />
+
+        <!-- Content -->
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#800000"
+            android:text="Chaturthi Pooja will start at 7:30 PM with special offerings and rituals. The evening begins with a Ganapati Homam to invoke the blessings of Lord Ganesha, followed by a grand Abhishekam and Archana. Devotees can participate in the special Pooja to seek prosperity, health, and happiness.
+
+Additionally, the temple priests will conduct a detailed recital of Vedic chants, creating a serene and divine atmosphere. Prasad will be distributed after the Aarti ceremony. We invite everyone to join us for this auspicious occasion and be part of the sacred celebrations."
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="16dp">
+
+            <Button
+                android:id="@+id/btn_contribute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Contribute"
+                android:backgroundTint="#0000FF"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btn_sponsor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sponsor"
+                android:backgroundTint="#0000FF"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
