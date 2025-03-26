@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/main"
+    android:padding="20dp">
+
+    <!-- Logo and Title Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:background="@drawable/splash_screen_logo"
+            android:layout_width="300dp"
+            android:layout_height="200dp" />
+    </LinearLayout>
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="390dp"
+        android:layout_height="373dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="338dp"
+        android:layout_marginRight="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_image" />
+
+    <!-- CardView for Login Form -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp"
+        android:layout_margin="16dp"
+        cardview:cardCornerRadius="16dp"
+        cardview:cardElevation="8dp"
+        android:backgroundTint="@android:color/white">
+
+        <!-- Inner RelativeLayout for Login Form -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <!-- Login Title -->
+            <TextView
+                android:id="@+id/loginTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Login"
+                android:textColor="#800000"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <!-- Mobile Number Input -->
+            <EditText
+                android:id="@+id/edtvMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loginTitle"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_rounded_border"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:minHeight="30dp"
+                android:padding="10dp" />
+
+            <!-- Password Input -->
+            <EditText
+                android:id="@+id/edtvPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtvMobileNumber"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_rounded_border"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+            <!-- Login & Register Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtvPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- Login Button -->
+                <Button
+                    android:id="@+id/btnLoginButton"
+                    style="@style/CustomButtonStyle"
+
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="Login"
+                    android:textSize="16dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <!-- Register Button -->
+                <Button
+                    android:id="@+id/btnRegisterButton"
+                    style="@style/CustomButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp"
+                    android:text="Register"
+                    android:textSize="16dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:backgroundTint="#800000"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Forgot Password Text (below buttons, centered, and in blue) -->
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Forgot Password?"
+                android:textColor="#0000FF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Footer Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Powered by www.techtist.com"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>

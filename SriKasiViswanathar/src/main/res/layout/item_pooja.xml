@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:elevation="2dp"
+    android:translationY="45dp">
+
+    <TextView
+        android:id="@+id/tvPoojaTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pooja Title"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#800000"/>
+
+    <TextView
+        android:id="@+id/tvPoojaDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:textColor="#800000"
+        android:paddingTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvPoojaStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Time: "
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:textColor="@android:color/holo_blue_light"
+        android:paddingTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvPoojaEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End Time: "
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:textColor="@android:color/holo_blue_light"
+        android:paddingTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvPoojaSponsors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sponsors: "
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="#800000"
+        android:paddingTop="4dp"
+        android:paddingBottom="6dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#800000"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

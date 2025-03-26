@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register"
+    android:background="@android:color/white"
+    android:padding="20dp">
+
+    <!-- Logo and Title Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/splash_screen_logo" />
+    </LinearLayout>
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="390dp"
+        android:layout_height="373dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="338dp"
+        android:layout_marginRight="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_image" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp"
+        android:layout_margin="16dp"
+        cardview:cardCornerRadius="16dp"
+        cardview:cardElevation="8dp"
+        android:backgroundTint="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <!-- Registration Title -->
+            <TextView
+                android:id="@+id/registerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Registration Page"
+                android:textColor="#800000"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <!-- Name Input -->
+            <EditText
+                android:id="@+id/edtvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registerTitle"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_rounded_border"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <!-- Mobile Number Input -->
+            <EditText
+                android:id="@+id/edtvMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtvName"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_rounded_border"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:padding="10dp" />
+
+            <!-- Email Input -->
+            <EditText
+                android:id="@+id/edtvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtvMobileNumber"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_rounded_border"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+            <!-- Password Input -->
+            <EditText
+                android:id="@+id/edtvPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtvEmail"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_rounded_border"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+
+            <!-- Apartment Name Dropdown -->
+            <AutoCompleteTextView
+                android:id="@+id/dropdownApartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtvPassword"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_rounded_border"
+                android:hint="Select Apartment"
+                android:inputType="none"
+                android:padding="10dp" />
+
+            <!-- Door Number Dropdown -->
+            <AutoCompleteTextView
+                android:id="@+id/dropdownDoorNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dropdownApartment"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edittext_rounded_border"
+                android:hint="Select Door Number"
+                android:inputType="none"
+                android:padding="10dp" />
+
+            <!-- Register Button -->
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/dropdownDoorNumber"
+                android:layout_marginTop="8dp"
+                android:text="Register"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#800000"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Footer Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Powered by www.techtist.com"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        android:layout_marginBottom="20dp" />
+</RelativeLayout>

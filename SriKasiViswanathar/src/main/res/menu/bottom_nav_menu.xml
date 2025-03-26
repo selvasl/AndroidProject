@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon"
+        android:title="Home"
+        app:itemTextAppearance="@style/CustomBottomNavTextAppearance" />
+    <item
+        android:id="@+id/pooja"
+        android:icon="@drawable/pooja_icon"
+        android:title="Pooja"
+        app:itemTextAppearance="@style/CustomBottomNavTextAppearance" />
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/news22"
+        android:title="News"
+        app:itemTextAppearance="@style/CustomBottomNavTextAppearance" />
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/menu22"
+        android:title="Menu"
+        app:itemTextAppearance="@style/CustomBottomNavTextAppearance" />
+</menu>
