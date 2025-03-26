@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pooja_activity"
+    android:background="@color/white">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3"
+        app:title="Pooja"
+        android:fontFamily="@font/poppins_semibold"
+        app:titleTextColor="#800000"
+        app:navigationIconTint="#000000"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <!-- Main Content -->
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_below="@id/toolbar">
+
+        <!-- Message when no pooja is available -->
+        <TextView
+            android:id="@+id/tvNoPooja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No pooja scheduled"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <!-- ListView for Pooja List -->
+        <ListView
+            android:id="@+id/listViewPooja"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tvNoPooja"
+            android:visibility="gone"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:paddingTop="10dp"/>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

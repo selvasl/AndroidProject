@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Sri Kasi Viswanathar</string>
+    <string-array name="pooja_messages">
+        <item>Select Pilgrim Services</item>
+        <item>Om Namah Shivaya</item>
+        <item>Om Namo Narayanaya</item>
+        <item>Om Shri Ganeshaya Namaha</item>
+        <item>Om Sri Rama Jayam</item>
+        <item>Hare Krishna Hare Rama</item>
+    </string-array>
+
+    <!--General-->
+    <string name="str_Warning_title">Warning</string>
+    <string name="str_internet">Your devices is not connected to internet. Kindly ensure the internet connection</string>
+
+    <!--Login Screen-->
+    <string name="login_heading">Login</string>
+    <string name="login_error_popup_dialog_title">Login Failed!!</string>
+    <string name="login_error_popup_dialog_message">Invalid username or password.</string>
+
+    <string name="str_Success_title">Success</string>
+    <string name="str_FWarning_title">Warning</string>
+    <string name="str_password_reset_success">Password has been reset successfully.</string>
+    <string name="str_password_reset_failed">Failed to reset password. Please try again.</string>
+    <string name="str_invalid_mobile">Invalid mobile number. Please enter a valid one.</string>
+
+</resources>
